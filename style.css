@@ -255,6 +255,7 @@ main h1 {
     height: 350px;
     margin-left: 90px;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
 @media screen and (min-width: 601px) and (max-width: 940px) {
     .col-md-4 img {
