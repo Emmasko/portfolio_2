@@ -1,0 +1,364 @@
+body {
+	margin: 0;
+	padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-x: hidden;
+    
+}
+
+
+header {
+    margin-left: 20px;
+    background-size: cover;
+    height: calc(100vh - 10vw);
+    background-position: center center;
+    background-attachment: fixed;
+    background-image: url("image/cartemere.jpeg");
+    background-color: #cccccc;
+	text-transform: uppercase;
+    font-size: 60px;
+    color: #f1f1f1;
+    font-family: Abril fatface, sans-serif;
+    text-align: center;
+    text-shadow: 3px 3px 3px black;
+    margin-bottom: 100px;
+
+}
+@media all and (max-width: 600px) {
+    header {
+        margin-right: 40px;
+        
+
+    }
+
+}
+span {
+	margin-top: 50px;
+}
+h1 span {
+    position: relative;
+    
+
+}
+@media screen and (min-width: 601) and (max-width: 1040px) {
+    h1 span {
+        font-size: 40px;
+    }
+
+}
+
+@media all and (max-width: 600px) {
+    h1 span{
+        font-size: 15px;
+        
+
+    }
+
+}
+/* Photo */
+.logo {
+    position: absolute;
+    left: 2.9%;
+    top: 4%;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+@media screen and (min-width: 401px) and (max-width: 940px) {
+    .logo {
+        margin-top: 400px;
+        margin-left: 20px;
+    }
+  }
+
+@media screen and (max-width: 400px) {
+    .logo {
+        margin-top: 350px;
+        margin-left: 20px;
+    }
+  }
+/*class de la nav */
+.beau {
+	margin-top: 50px;
+}
+
+nav{
+    display: flex;
+    
+}
+nav>a{
+    display: block;
+    width: 400px;
+    background-color: #D2B48C;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+    color: #FFF;
+    margin: 1px;
+    text-decoration: none; /* Supprime le surlignage des liens hypertexte */
+}
+nav>a:hover{
+    background-color: #D2B48C;
+    color: #000;
+    transition:all 0.3s ease;
+}
+#ch{
+    display: none; /* Pour masquer le checbox */
+}
+#lab{
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(#FFF 0%,#FFF 20%,transparent 21%, transparent 40%,#FFF 41%,#FFF 60%,transparent 61%, transparent 80%,#FFF 81%, #FFF 100%);
+    margin: 4px;
+    display: none; /* Faire disparaitre le label lorsque l'écran s'acradit */
+}
+@media all and (max-width: 960px){
+    nav{
+        display: block;
+        position: absolute;
+        left: 0; /* Pour que la barre de nav occupe tout l'espace */
+        right: 0;/* Pour que la barre de nav occupe tout l'espace */
+        transform: translate(-1000px,0); /* Le menu disparait */
+        transition: all 0.9s ease;
+    }
+    nav>a{
+        width: auto;
+    }
+    #ch:checked+nav{
+        transform: translate(0,0); /* Le menu apparait */
+        transition: all 0.9s ease;
+    }
+    #lab{
+        display: block;
+    }
+}
+
+/* bouton A propos */
+.btn-first {
+    border: 2px solid #f1f1f1;
+    outline: none;
+    background: transparent;
+    font-size: 30px;
+    padding: 20px;
+    width: 300px;
+    color: #f1f1f1;
+    cursor: pointer;
+    margin-top: 100px;
+}
+@media screen and (max-width: 400px) {
+    .btn-first {
+        width: 200px;
+        margin-left: 15px;
+    }
+  }
+.btn-first:nth-child(1){
+    margin-right: 30px;
+}
+.btn-first:hover {
+    transition: all 0.3s ease-in-out;
+    background: #f1f1f1;
+    color: #333;
+}
+.btn-first a {
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 3px 3px 3px black;
+}
+.btn-first a:hover {
+    color: #bf8208;
+    text-decoration: none;
+    text-shadow: 3px 3px 3px black;
+}
+
+/*main*/
+
+
+main h1 {
+    text-align: center;
+}
+
+.wrapper-a img {
+	width: 100%;
+	height: 500px;
+}
+
+.center-div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 80%; 
+  height:600px;
+  text-align: center;
+  display: block;
+  border-radius: 15px;
+  background-color: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 0.5em;
+  
+  margin-right: 10%;
+  margin-left: 10%;
+  
+}
+@media screen and (min-width: 601px) and (max-width: 940px) {
+    .center-div {
+        height: auto;
+        margin-top: 20%;
+    }
+}
+@media all and (max-width: 600px) {
+    .center-div {
+        height: auto;
+        margin-top: 20%;
+    }
+}
+
+.center-div p {
+	font-size: 20px;
+    background-attachment: fixed, scroll;
+    background-repeat: no-repeat, repeat-y;
+    background-image: url("image/handicap5.jpg");
+    color: black;
+    padding: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+}
+.center-div h1 {
+    padding: 40px;
+}
+
+
+/* Les compétences */
+.flex-container_a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+
+
+.column_a {
+    text-align: center;
+    width: 32%;
+    
+}
+.column_a img{
+    max-width: 100%;
+    margin-left: 0!important;
+    height: 100px;
+    width: 100px;
+    
+}
+/* Style h1 compétences */
+.bur {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Portfolio */
+.container {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+
+.col-md-4 img {
+    width: 300px;
+    height: 350px;
+    margin-left: 90px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+@media screen and (min-width: 601px) and (max-width: 940px) {
+    .col-md-4 img {
+        margin-left: 30px;
+        width: 200px;
+        height: 250px;
+    }
+}
+@media all and (max-width: 600px) {
+    .col-md-4 img {
+        margin-left: 110px;
+        width: 200px;
+        height: 250px;
+    }
+}
+
+.col-md-4 h4 {
+    color: gray;
+    margin-left: 100px;
+}
+@media all and (max-width: 600px) {
+    .col-md-4 h4 {
+       font-size: 20px;
+    }
+}
+.buto {
+    color: #333;
+    margin-top: 20px;
+   
+}
+
+/* Footer */
+.foo {
+    text-align: center;
+    color: #333;
+}
+.foo {
+    width: 100%;
+    height: 500px;
+    display: block;
+    position: relative;
+  }
+  @media all and (max-width: 600px) {
+    .foo {
+        height: auto;
+        margin-top: 20%;
+        margin-left: -2.5%;
+        margin-right: 10%;
+        
+    }
+}
+  
+  .foo::after {
+    content: "";
+    background: url("image/cartemere.jpeg");
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 20px;   
+  }
+  
+  /* texte de contact */
+  .foo {
+      text-align: center;
+      color: #333;
+      padding: 80px;
+  }
+  
+  .foo a {
+      font-size: 15px;
+  }
+  footer {
+      width: 100%;
+  }
+  @media all and (max-width: 600px) {
+    footer {
+        margin-right: 10%;
+        
+    }
+}
+  
+
