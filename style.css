@@ -85,10 +85,10 @@ h1 span {
 .beau {
 	margin-top: 50px;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     .beau {
         font-size: 15px;
-        width: 300px;
+        width: 355px; 
         margin-left: 20px;
     }
   }
