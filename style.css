@@ -8,7 +8,7 @@ body {
 
 
 header {
-    margin-left: 20px;
+    margin-left: 0;
     background-size: cover;
     height: calc(100vh - 10vw);
     background-position: center center;
@@ -26,7 +26,7 @@ header {
 }
 @media all and (max-width: 600px) {
     header {
-        margin-right: 40px;
+        margin-left: 0px;
         
 
     }
@@ -37,8 +37,6 @@ span {
 }
 h1 span {
     position: relative;
-    
-
 }
 @media screen and (min-width: 601) and (max-width: 940px) {
     h1 span {
@@ -49,7 +47,7 @@ h1 span {
 
 @media all and (max-width: 600px) {
     h1 span{
-        font-size: 13px;
+        font-size: 20px;
         
 
     }
@@ -66,10 +64,11 @@ h1 span {
     border-radius: 15px;
     margin-bottom: 20px;
 }
-@media screen and (min-width: 401px) and (max-width: 940px) {
+@media screen and (min-width: 601px) and (max-width: 940px) {
     .logo {
         margin-top: 400px;
         margin-left: 20px;
+        
     }
   }
 
@@ -77,19 +76,21 @@ h1 span {
     .logo {
         width: 80px;
         height: 80px;
-        margin-top: 140px;
-        margin-left: 50px;
+        margin-top: 160px;
+        margin-right: 100px;
+        
     }
   }
 /*class de la nav */
 .beau {
 	margin-top: 50px;
+    font-size: 20px;
 }
 @media screen and (max-width: 600px) {
     .beau {
         font-size: 15px;
-        width: 355px; 
         margin-left: 20px;
+        width: 90%;    
     }
   }
 
@@ -99,13 +100,13 @@ nav{
 }
 @media screen and (max-width: 400px) {
     .nav {
-        width: 200px;
+        width: 300px;
     }
   }
 nav>a{
     display: block;
     width: 400px;
-    background-color: #D2B48C;
+    background-color: #d2a28c;
     text-align: center;
     box-sizing: border-box;
     padding: 20px;
@@ -113,6 +114,7 @@ nav>a{
     margin: 1px;
     text-decoration: none; /* Supprime le surlignage des liens hypertexte */
 }
+
 
 nav>a:hover{
     background-color: #D2B48C;
@@ -129,11 +131,17 @@ nav>a:hover{
     margin: 4px;
     display: none; /* Faire disparaitre le label lorsque l'écran s'acradit */
 }
+@media screen and (min-width: 601px) and (max-width: 940px) {
+    #lab {
+        margin-top: 150px;
+        margin-left: 40px;  
+    }
+  }
 @media screen and (max-width: 400px) {
     #lab {
         margin-top: 10px;
         margin-left: 40px;
-       
+        margin-bottom: -100px;  
     }
   }
 @media all and (max-width: 960px){
@@ -144,6 +152,7 @@ nav>a:hover{
         right: 0;/* Pour que la barre de nav occupe tout l'espace */
         transform: translate(-1000px,0); /* Le menu disparait */
         transition: all 0.9s ease;
+        
     }
     nav>a{
         width: auto;
@@ -152,12 +161,27 @@ nav>a:hover{
         transform: translate(0,0); /* Le menu apparait */
         transition: all 0.9s ease;
     }
+    
     #lab{
         display: block;
     }
 }
 
-/* bouton A propos */
+/* bouton Mon CV */
+.container-btns {
+    margin-left: 600px;
+}
+@media screen and (max-width: 901px) {
+    .container-btns {
+        margin-left: 400px;
+    }
+  }
+  @media screen and (min-width: 300px) and (max-width: 900px)  {
+    .container-btns {
+        margin-left: 80px;
+        
+    }
+  }
 .btn-first {
     border: 2px solid #f1f1f1;
     outline: none;
@@ -168,11 +192,13 @@ nav>a:hover{
     color: #f1f1f1;
     cursor: pointer;
     margin-top: 100px;
+    text-align: center;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     .btn-first {
-        width: 200px;
+        width: 100px;
         margin-left: 15px;
+        
     }
   }
 .btn-first:nth-child(1){
@@ -187,7 +213,13 @@ nav>a:hover{
     color: #fff;
     text-decoration: none;
     text-shadow: 3px 3px 3px black;
+    
 }
+@media screen and (max-width: 400px) {
+    .btn-first a {
+        font-size: 20px;
+    }
+  }
 .btn-first a:hover {
     color: #bf8208;
     text-decoration: none;
@@ -218,7 +250,6 @@ main h1 {
   background-color: rgba(0,0,0,0.6);
   color: #fff;
   padding: 0.5em;
-  
   margin-right: 10%;
   margin-left: 10%;
   
@@ -226,13 +257,13 @@ main h1 {
 @media screen and (min-width: 601px) and (max-width: 940px) {
     .center-div {
         height: auto;
-        margin-top: 20%;
+        margin-top: 3%;
     }
 }
 @media all and (max-width: 600px) {
     .center-div {
         height: auto;
-        margin-top: 20%;
+        margin-top: 30px;
     }
 }
 
@@ -250,6 +281,20 @@ main h1 {
 .center-div h1 {
     padding: 40px;
 }
+@media screen and (min-width: 601px) and (max-width: 940px) {
+    .center-div h1 {
+        height: auto;
+        margin-top: 3%;
+    }
+}
+@media all and (max-width: 600px) {
+    .center-div h1 {
+        height: auto;
+        margin-top: 80px;
+        
+    }
+}
+
 
 
 /* Les compétences */
@@ -306,7 +351,7 @@ main h1 {
 }
 @media all and (max-width: 600px) {
     .col-md-4 img {
-        margin-left: 110px;
+        margin-left: 80px;
         width: 200px;
         height: 250px;
     }
@@ -314,7 +359,7 @@ main h1 {
 
 .col-md-4 h4 {
     color: gray;
-    margin-left: 100px;
+    margin-left: 110px;
 }
 @media all and (max-width: 600px) {
     .col-md-4 h4 {
@@ -343,8 +388,33 @@ main h1 {
         height: auto;
         margin-top: 20%;
         margin-left: -2.5%;
-        margin-right: 10%;
-        
+        margin-right: 10%;    
+    }
+}
+.foo h1, h3 {
+    font-size: 40px;
+    
+  }
+  @media all and (max-width: 600px) {
+    .foo h1, h3 {
+        font-size: 15px;   
+    }
+}
+#bo {
+    font-size: 40px;
+}
+@media all and (max-width: 600px) {
+    #bo {
+        font-size: 30px;   
+    }
+}
+#ba {
+    font-size: 30px;
+}
+@media all and (max-width: 600px) {
+    #ba {
+        font-size: 15px; 
+          
     }
 }
   
@@ -375,10 +445,12 @@ main h1 {
   }
   footer {
       width: 100%;
+      margin-left: -10px;
   }
   @media all and (max-width: 600px) {
     footer {
-        margin-right: 10%;
+        margin-right: 10px;
+        margin-left: 0;
         
     }
 }
